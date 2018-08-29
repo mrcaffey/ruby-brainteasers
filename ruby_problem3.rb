@@ -3,8 +3,8 @@
 
 def firstletter
   puts "Enter a string. The program will capitalize the first letter."
-  input = gets.to_s.strip.capitalize
-  puts input
+  input = gets.to_s.strip.downcase
+  puts input.split.map(&:capitalize).join(' ')
 end
 
 firstletter
