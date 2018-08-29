@@ -3,7 +3,8 @@
 def alpha 
   puts "Enter in a string..Letters will be returned in alphabetical order"
   input = gets.to_s.strip
-  puts input.chars.sort
+  puts 
+  puts input.chars.sort.join
 end
 
 alpha
